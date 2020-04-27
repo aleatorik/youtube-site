@@ -231,3 +231,15 @@ body > .info {
   font-size: var(--font-micro);
   color: var(--grey-dark-color);
 }
+
+.infoAndUpNext {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .infoAndUpNext {
+    flex-direction: row;
+    margin: var(--padding);
+  }
+}
