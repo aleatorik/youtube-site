@@ -48,23 +48,55 @@ button:focus {
 header {
   display: flex;
   justify-content: space-between;
-  padding: var(--padding);
+  padding: 18px;
   background-color: var(--black-color);
   color: var(--white-color);
 }
 
 header .logo {
+  position: relative;
+  display: inline-block;
   font-size: var(--font-large);
+  margin-top: 5.5px;
 }
 
-header .logo i {
+header .logo .fas fa-bars {
+  color: var(--grey-light-color);
+}
+
+header .logo .fab {
   color: var(--red-color);
+  margin-left: 9px;
 }
 
-header .icons .fa-search {
-  margin-right: var(--padding);
+header .logo .countryCode {
+  font-size: 8px;
+  position: absolute;
+  top: 0;
+  right: 1;
 }
 
+header .icons {
+  display: flex;
+  align-items: center;
+}
+
+header .icons i {
+  margin-right: 1.5em;
+}
+
+header .icons .userBtn {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  padding: 5.5px;
+  font-size: var(--font-icon);
+  color: var(--white-color);
+  background-color: #512da7;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
 /* Video Player */
 
 .player {
